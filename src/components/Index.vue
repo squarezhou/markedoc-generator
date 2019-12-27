@@ -23,7 +23,7 @@
           <el-form-item>
             <el-button type="primary" icon="el-icon-s-promotion" @click="send">发送</el-button>
             <el-button icon="el-icon-refresh-right" @click="reset">清空</el-button>
-            <el-button type="success" icon="el-icon-search" @click="make">生成文档</el-button>
+            <el-button type="success" icon="el-icon-document-checked" @click="make">生成文档</el-button>
           </el-form-item>
         </el-form>
 
@@ -72,7 +72,7 @@
             </el-table-column>
           </el-table>
 
-          <el-button type="success" class="mt-3" @click="make">生成文档</el-button>
+          <el-button type="success" icon="el-icon-document-checked" class="mt-3" @click="make">生成文档</el-button>
         </div>
       </el-col>
 

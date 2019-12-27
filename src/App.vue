@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="px-3">
+  <div id="app" class="p-3">
     <Index msg="Markedoc生成器"/>
   </div>
 </template>
