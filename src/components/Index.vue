@@ -6,7 +6,7 @@
       <el-col :span="12">
         <el-form ref="form" :model="form" label-width="120px">
           <el-form-item label="URL" prop="url">
-            <el-input v-model="form.url"></el-input>
+            <el-input v-model="form.url" placeholder="仅支持https协议"></el-input>
           </el-form-item>
           <el-form-item label="Method" prop="method">
             <el-select v-model="form.method" placeholder="请选择">
@@ -50,7 +50,7 @@
             </el-table-column>
             <el-table-column prop="desc" label="说明">
               <template slot-scope="scope">
-                <el-input v-model="scope.row.desc" placeholder></el-input>
+                <el-input v-model="scope.row.desc"></el-input>
               </template>
             </el-table-column>
           </el-table>
@@ -303,6 +303,10 @@ export default {
     },
     reset () {
       this.$refs.form.resetFields()
+      this.form.resp = {}
+      this.paramsData = []
+      this.respsData = []
+      this.docData = ''
     }
   }
 }
