@@ -1,0 +1,33 @@
+{
+    "code": 0,
+    "data": {
+        "total": 3,
+        "list": [
+            {
+                "name": "square",
+                "age": 20,
+                "hooby": [
+                    "s1",
+                    "s2"
+                ],
+                "links": {
+                    "title": "github",
+                    "url": "https://github.com/squarezhou"
+                }
+            },
+            {
+                "name": "zhou",
+                "age": 30,
+                "hooby": [
+                    "z1",
+                    "z2"
+                ],
+                "links": {
+                    "title": "github",
+                    "url": "https://github.com/squarezhou"
+                }
+            }
+        ]
+    },
+    "message": "OK"
+}
