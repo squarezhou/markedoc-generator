@@ -169,10 +169,10 @@ export default {
     }
   },
   mounted () {
-    this.form.url = 'http://172.16.0.13:8008/api/v1/feature/list'
-    this.form.method = 'POST'
-    this.form.headers = '{"X-TOKEN": "FGNEm76pgpt3gLG7_Jct04whM8asslw6"}'
-    this.form.body = '{"limit":10,"current_page":1,"code":null}'
+    this.form.url = './test.json'
+    this.form.method = 'GET'
+    this.form.headers = '{"token": "fake_token"}'
+    this.form.body = '{"page":1, "limit":10}'
   },
   computed: {
     headersObj () {
@@ -232,8 +232,10 @@ export default {
             }
           }
 
-          for (let i in data) {
-            getRec(data[i], (prefix !== '' ? prefix + '/' : '') + i)
+          if (typeof data === 'object') {
+            for (let i in data) {
+              getRec(data[i], (prefix !== '' ? prefix + '/' : '') + i)
+            }
           }
         } else {
           retStruct.push({
