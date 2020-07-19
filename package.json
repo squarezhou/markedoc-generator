@@ -13,7 +13,7 @@
     "element-ui": "^2.4.5",
     "github-markdown-css": "^3.0.1",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "marked": "^0.8.0",
     "popper.js": "^1.16.0",
     "vue": "^2.6.10",
